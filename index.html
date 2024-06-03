@@ -11,7 +11,7 @@
 
 <body>
     <nav class="navbar navbar-light bg-light navbar-expand-sm">
-        <a href="/" class="navbar brand">Whiskey Drio</a>
+        <a href="/" class="navbar-brand">Whiskey Drop</a>
         <ul class="navbar-nav mr-auto"> <!--mr auto pushes content to the left-->
             <li class="active nav-item mr-2">
                 <a class="nav-link" href="/">Home</a>
@@ -19,19 +19,28 @@
             <li class="nav-item mr-2">
                 <a class="nav-link" href="/about">About</a>
             </li><!--mr-2 gives left spacing-->
+            <li class="nav-item mr-2">
+                <a class="nav-link d-block d-sm-none" href="/login">Sign In / Sign Up</a> <!--only displayed on mobile device-->
+            </li><!--mr-2 gives left spacing-->
         </ul>
+        <div class="d-none d-md-block"><!--only displayed on medium size screens and up-->
         <p class="navbar-text my-auto mr-2">
             <i>Great whiskey delivered to your door!</i>
             <a href="/login">Sign In / Sign Up</a>
         </p><!--my-auto gives top and bottom spacing-->
+    </div>
     </nav>
-    <article class="container">
+    <article class="container mt-3"> <!--top margin to our container ie mt-3-->
         <!-- Callout -->
         <div class="row">
             <div class="col-12"><!--this is for mobile device-->
-        <section class="callout">
+        <section class="callout jumbotron text-center">
             <h1>The finest whiskeys delivered to your doorstep.</h1>
-            <p class="lead">Sign up today to start receiving the world's best whiskeys every month.<s>€19.99</s> <strong><mark>First one is free!</mark></strong></p>
+            <p class="lead">Sign up today to start receiving the world's best whiskeys every month.
+                <s class="d-none d-sm-inline">€19.99</s><!--this struckout text is not shown on mobile-->
+
+                <span class="d-inline d-sm-none"><br></span><!--this is only visable on mobile, so the highlighted text is on a line of its own-->
+                <strong><mark>First one is free!</mark></strong></p>
             <button class="btn btn-success btn-lg">Sign up!</button>
             <p class="text-muted"><small>You must be over 18 to sign up to our service. Please, drink responsibly</small></p>
         </section>
@@ -43,7 +52,7 @@
         <!-- Quotes -->
         <section class="quotes">
             <div class="row">
-                <div class="col-12"><!--this is for mobile device-->
+                <div class="col-12 my-5"><!--this is for mobile device-->
             <h2 class="text-uppercase">Quotes:</h2>
             </div>
             </div>
@@ -70,7 +79,7 @@
         <!-- Features -->
         <section class="features">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 my-5">
                     <h2 class="text-uppercase">Features:</h2>
                 </div>
             </div>
