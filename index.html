@@ -3,48 +3,28 @@
 
 <head>
     <meta charset="utf-8">
-    
+
     <title>Whiskey Drop | Taste a new whiskey every month</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-light navbar-expand-sm">
-        <a href="/" class="navbar-brand">Whiskey Drop</a>
-        <ul class="navbar-nav mr-auto"> <!--mr auto pushes content to the left-->
-            <li class="active nav-item mr-2">
-                <a class="nav-link" href="/">Home</a>
-            </li><!--mr-2 gives left spacing-->
-            <li class="nav-item mr-2">
-                <a class="nav-link" href="/about">About</a>
-            </li><!--mr-2 gives left spacing-->
-            <li class="nav-item mr-2">
-                <a class="nav-link d-block d-sm-none" href="/login">Sign In / Sign Up</a> <!--only displayed on mobile device-->
-            </li><!--mr-2 gives left spacing-->
-        </ul>
-        <div class="d-none d-md-block"><!--only displayed on medium size screens and up-->
-        <p class="navbar-text my-auto mr-2">
-            <i>Great whiskey delivered to your door!</i>
-            <a href="/login">Sign In / Sign Up</a>
-        </p><!--my-auto gives top and bottom spacing-->
-    </div>
-    </nav>
-    <article class="container mt-3"> <!--top margin to our container ie mt-3-->
+    <article class="container">
+
         <!-- Callout -->
         <div class="row">
-            <div class="col-12"><!--this is for mobile device-->
-        <section class="callout jumbotron text-center">
-            <h1>The finest whiskeys delivered to your doorstep.</h1>
-            <p class="lead">Sign up today to start receiving the world's best whiskeys every month.
-                <s class="d-none d-sm-inline">€19.99</s><!--this struckout text is not shown on mobile-->
-
-                <span class="d-inline d-sm-none"><br></span><!--this is only visable on mobile, so the highlighted text is on a line of its own-->
-                <strong><mark>First one is free!</mark></strong></p>
-            <button class="btn btn-success btn-lg">Sign up!</button>
-            <p class="text-muted"><small>You must be over 18 to sign up to our service. Please, drink responsibly</small></p>
-        </section>
-        </div>
+            <div class="col-12">
+                <!--this is for mobile device-->
+                <section class="callout">
+                    <h1>The finest whiskeys delivered to your doorstep.</h1>
+                    <p class="lead">Sign up today to start receiving the world's best whiskeys every month.<s>€19.99</s>
+                        <strong><mark>First one is free!</mark></strong></p>
+                    <button class="btn btn-success btn-lg">Sign up!</button>
+                    <p class="text-muted"><small>You must be over 18 to sign up to our service. Please, drink
+                            responsibly</small></p>
+                </section>
+            </div>
         </div>
         <!-- /.callout -->
         <hr>
@@ -52,25 +32,38 @@
         <!-- Quotes -->
         <section class="quotes">
             <div class="row">
-                <div class="col-12 my-5"><!--this is for mobile device-->
-            <h2 class="text-uppercase">Quotes:</h2>
-            </div>
+                <div class="col-12 my-5">
+                    <h2 class="text-uppercase">Quotes:</h2>
+                    <hr />
+                </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-6"><!--this is for mobile device-->
-                    <blockquote class="blockquote">
-                        <p>I've been introduced to more than 10 great international whiskeys I never knew about.</p>
-                        <footer class="blockquote-footer">Jane Doe on <cite title="Twitter">Twitter</cite></footer>
-                    </blockquote>
-            </div>
-            
-                <div class="col-12 col-md-6"><!--this is for mobile device-->
-                    <blockquote class="blockquote">
-                        <p>I haven't been sober for months!</p>
-                        <footer class="blockquote-footer">Jane Doe on <cite title="Twitter">Twitter</cite></footer>
-                    </blockquote>
-            </blockquote>
-            </div>
+                <div class="col-12 col-md-6">
+                    <div class="media">
+                        <div class="d-none d-sm-block">
+                            <img src="images/girl-image.png" class="rounded-circle mr-3" height=100 width=100>
+                        </div>
+                        <div class="media-body">
+                            <blockquote class="blockquote">
+                                <p>I've been introduced to more than 10 great international whiskeys I never knew about.</p>
+                                <footer class="blockquote-footer">Jane Doe on <cite title="Twitter">Twitter</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="media">
+                        <div class="d-none d-sm-block">
+                            <img src="images/guy-image.png" class="rounded-circle mr-3" height=100 width=100>
+                        </div>
+                        <div class="media-body">
+                            <blockquote class="blockquote">
+                                <p>I haven't been sober for months!</p>
+                                <footer class="blockquote-footer">Jane Doe on <cite title="Twitter">Twitter</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- /.quotes -->
@@ -79,32 +72,80 @@
         <!-- Features -->
         <section class="features">
             <div class="row">
-                <div class="col-12 my-5">
+                <div class="col-12">
+                    <!--this is for mobile device-->
                     <h2 class="text-uppercase">Features:</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4">
-            <div class="feature">
-                <h3>Feature 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
-            </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-            <div class="feature">
-                <h3>Feature 2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
-            </div>
-        </div>
-        <div class="col-12 d-md-none d-lg-block col-lg-4">
-            <div class="feature">
-                <h3>Feature 3</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
-            </div>
-        </div>
+                    <!--this is for mobile device-->
+                    <div class="feature">
+                        <h3>Feature 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!--this is for mobile device-->
+                    <div class="feature">
+                        <h3>Feature 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
+                    </div>
+                </div>
+                <div class="col-12 d-class-md-none d-lg-block col-lg-4">
+                    <!--
+                On med screen size our third feature is not displayed but on big screens we want it ie d-lg-block col-lg-4
+
+                if we didnt supply the second d class it would still be hidden-->
+
+                    <!--this is for mobile device-->
+                    <div class="feature">
+                        <h3>Feature 3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
+                    </div>
+                </div>
+                <!--  
+        <section class="table">
+            <h3>Monthly favourites</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                      <th scope="col">name</th>
+                      <th scope="col">origin</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jack Daniels</td>
+                        <td>America</td>
+                    </tr>
+                    <tr>
+                        <td>Johnny Walker</td>
+                        <td>America</td>
+                    </tr>
+                    <tr>
+                        <td>Grey Goose</td>
+                        <td>Scotland</td>
+                    </tr>
+                    <tr>
+                        <td>Bushmills</td>
+                        <td>Ireland</td>
+                    </tr>
+                    <tr>
+                        <td>Powers</td>
+                        <td>Ireland</td>
+                    </tr>
+                </tbody>
+                </table>-->
         </section>
         <!-- /.features -->
     </article>
