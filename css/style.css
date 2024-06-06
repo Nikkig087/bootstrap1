@@ -56,6 +56,37 @@ body {
     width: 35px;
 }
 
+/* Navbar Styling */
+
+.navalert-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 1; /*this makes sure we dont cover our navbar*/
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.25);
+}
+
+
+.navbar .navbar-toggler {
+border: 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar .navbar-nav a {
+    font-weight: bold;
+}
+
 /*Jumbotron*/
 
 /*overwrite the default bootstrap jumbotron class below*/
@@ -72,7 +103,7 @@ margin-bottom: 30px;
 
 .jumbotron-lead{
 margin: 25px 0;
-color: #a7a7a7;
+color: lightgrey;
 }
 
 .jumbotron small {
