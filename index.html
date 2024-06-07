@@ -92,12 +92,13 @@
     </div>
 
     <!-- Quotes -->
-    <div class="container quotes-container">
+     <div class="container-wrapper">
+    <div class="container quotes-container content-container">
         <section class="quotes">
             <div class="row">
-                <div class="col-12 my-5">
+                <div class="col-12 page-header">
                     <h2 class="text-uppercase">Quotes:</h2>
-                    <hr />
+                    <hr class="block-divider block-divider--short">
                 </div>
             </div>
             <div class="row">
@@ -134,23 +135,25 @@
         </section>
         <!-- /.quotes -->
     </div>
+</div>
 
     <!-- Features -->
-    <div class="features-container">
+     <div class="container-wrapper container-wrapper--red">
+    <div class="container features-container content-container">
         <section class="features">
             <div class="row">
-                <div class="col-12 my-5">
+                <div class="col-12 page-header">
                     <!--this is for mobile device-->
                     <h2 class="text-uppercase">Features:</h2>
-                    <hr />
+                    <hr class="block-divider block-divider--short block-divider--white">
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4">
                     <!--this is for mobile device-->
-                    <div class="feature">
-                        <h3> <i class="fa-solid fa-gift d-none d-sm-inline"></i> Feature 1 <span
-                                class="badge badge-success">New</span></h3>
+                    <div class="feature"> <!--change the class in i from d-sm-inline to d-sm-block to have icons on line of their own-->
+                        <h3> <i class="fa-solid fa-gift d-none d-sm-block"></i> Feature 1 <span
+                                class="badge badge-success">New</span></h3> 
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -160,7 +163,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <!--this is for mobile device-->
                     <div class="feature">
-                        <h3><i class="fa-solid fa-credit-card  d-none d-sm-inline"></i> Feature 2</h3>
+                        <h3><i class="fa-solid fa-credit-card  d-none d-sm-block"></i> Feature 2</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -175,7 +178,7 @@
 
                     <!--this is for mobile device-->
                     <div class="feature">
-                        <h3><i class="fa-solid fa-circle-xmark  d-none d-sm-inline"></i>Feature 3</h3>
+                        <h3><i class="fa-solid fa-circle-xmark  d-none d-sm-block"></i>Feature 3</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -183,6 +186,7 @@
                     </div>
                 </div>
             </div>
+        </div>
             <!--  
         <section class="table">
             <h3>Monthly favourites</h3>
